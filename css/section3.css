@@ -50,7 +50,7 @@
 .skill {
   height: inherit;
   width: fit-content;
-  border: 5px solid white;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
   text-align: center;
   font-size: 24px;

@@ -20,76 +20,83 @@
   padding: 0 10vw;
 }
 
-#profile-div{
-    width: 20%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
+#profile-div {
+  position: relative;
+  width: 20%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
 }
 
-#profile-div #profile-img{
-    background-color: #2ed573;
-    width: 52%;
-    height: 35%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#profile-div #profile-img {
+  background-color: #2ed573;
+  width: 52%;
+  height: 47%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#about{
-    width: 80%;
-    height: 60%;
+#about {
+  width: 80%;
+  height: 60%;
 }
 
-#name2{
-    margin-top: 5%;
-    font-size: 32px;
-    font-weight: 600;
-    color: var(--primary-color);
+#name2 {
+  position: relative;
+  margin-top: 5%;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 100%;
+  text-align: center;
 }
 
-#profile-name2{
-    font-size: 20px;
-    color: #fff;
+#profile-name2 {
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
-#links{
-    margin-top: 8%;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+#links {
+  margin-top: 8%;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-#about{
-    padding: 2% 19% 2% 25px;
+#about {
+  padding: 2% 19% 2% 25px;
 }
 
-#about #heading{
-    font-size: 64px;
-    font-weight: bold;
-    display: flex;
-    align-items: flex-start;
-    gap:30px;
+#about #heading {
+  font-size: 64px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
 }
 
-#about>p{
-    font-size: 16px;
-    word-spacing: 1.5px;
-    color: #bec0c4;
+#about > p {
+  font-size: 16px;
+  word-spacing: 1.5px;
+  color: #bec0c4;
 }
 
-#para1{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 3% 0;
+#para1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 3% 0;
 }
-#para2, #para3{
-    margin: 2% 0;
+#para2,
+#para3 {
+  margin: 2% 0;
 }
