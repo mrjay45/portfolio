@@ -22,9 +22,9 @@ body {
 
 #first-section {
   width: 100vw;
-  height: 100%;
-  background-color: var(--section-bg); 
-  position: relative; 
+  height: 100vh;
+  background-color: var(--section-bg);
+  position: relative;
   overflow: hidden;
   user-select: none;
   cursor: default;
@@ -32,47 +32,47 @@ body {
 
 #nav {
   position: fixed;
-  padding: 0 50px;
   display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vmin 4vmax;
   width: 100vw;
+  height: 10vmin;
   z-index: 1000;
+  padding-bottom: 2vw;
+}
+
+#nav img {
+  width: 10vmax;
 }
 
 #nav-text {
-  width: 40vw;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: transparent;  
+  gap: 5vw;
 }
 
 #nav a {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.2vmax;
   text-decoration: none;
   position: relative;
   transition: 0.3s;
+  padding-bottom: 0.5vw;
 }
 
 #nav a::after {
   content: "";
   position: absolute;
   background-color: var(--primary-color);
-  height: 3px;
+  height: 0.1vw;
   width: 0%;
   left: 0;
-  bottom: -10px;
+  bottom: 0;
   transition: 0.2s;
 }
 
 #nav-text a:hover::after {
   width: 100%;
-}
-
-#nav-text a:hover {
-  color: var(--primary-color);
 }
 
 #nav-text a.active {
@@ -83,68 +83,120 @@ body {
   width: 100%;
 }
 
+#nav i {
+  display: none;
+}
+
 #main-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 70%;
-  margin-top: 8%;
+  margin-top: 10vmin;
 }
 
 #right-div-s1 {
   position: relative;
-  margin-top: 5%;
-  right: 8vw;
-  width: 35%;
-  height: 80%;
+  width: 35vw;
+  height: 28vw;
 }
 
 #right-div-s1 img {
   position: absolute;
   top: 0;
   right: 0;
-  height: 27vw;
-  width: 33vw;
+  width: 35vw;
+  height: 28vw;
 }
 
 #left-div-s1 {
-  height: 20vw;
-  width: 20vw;
-  margin-top: 5%;
-  margin-left: 10%;
+  width: 35vmax;
+  height: 28vmax;
+  padding: 5vmax 3vmax;
 }
 
 #profile-name {
-  font-size: 16px;
+  font-size: 1.2vmax;
   font-weight: 400;
   color: var(--dark-pc);
-  margin-bottom: 8px;
   letter-spacing: 1.5px;
+  width: 60%;
 }
 
 #name {
-  font-size: 42px;
+  font-size: 3.5vmax;
   font-weight: 800;
   letter-spacing: 1.5px;
   margin-bottom: 7%;
+  width: 60%;
 }
 
 #ld-detailed-section {
   color: #7f899ec3;
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: 1px;
+  font-size: 1.5vmax;
   margin-bottom: 14%;
+  width: 75%;
 }
 
 #button {
-  width: 50%;
-  padding: 10px 20px;
+  width: 10vmax;
+  padding: 10px 2vw;
   background-color: var(--dark-pc);
   text-align: center;
   cursor: default;
   user-select: none;
+  font-size: 1vmax;
 }
 
+/* Mobile first */
+@media (max-width: 480px) {
+  #nav-text {
+    display: none;
+  }
+  #nav i {
+    display: inline;
+    font-size: 7vw;
+  }
+  #right-div-s1 {
+    display: none;
+  }
+}
 
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  #first-section{
+    height: 60vmin;
+  }
+}
+
+@media (max-width: 800px) {
+  #first-section{
+    height: 65vmax;
+  }
+  #left-div-s1{
+    width: fit-content;
+    height: fit-content;
+  }
+  #profile-name{
+    font-size: 2.2vmax;
+    width: 100%;
+  }
+  #name{
+    font-size: 4.5vmax;
+    width: 100%;
+  }
+  #ld-detailed-section{
+    font-size: 2.5vmax;
+    width: 100%;
+  }
+  #button{
+    width: 17vmax;
+    font-size: 2vmax;
+    padding: 3vw 0;
+  }
+}
+
+@media (max-width: 700px) {
+  
+}
