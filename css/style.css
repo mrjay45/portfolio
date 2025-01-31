@@ -22,7 +22,7 @@ body {
 
 #first-section {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background-color: var(--section-bg);
   position: relative;
   overflow: hidden;
@@ -31,11 +31,10 @@ body {
 }
 
 #nav {
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vmin 4vmax;
+  padding: 2vmin 10vmax;
   width: 100vw;
   height: 10vmin;
   z-index: 1000;
@@ -89,11 +88,12 @@ body {
 
 #main-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 70%;
   margin-top: 10vmin;
+  padding: 0 8vmax;
 }
 
 #right-div-s1 {
@@ -161,42 +161,45 @@ body {
   #right-div-s1 {
     display: none;
   }
-}
-
-/* Tablet */
-@media (min-width: 481px) and (max-width: 768px) {
-  #first-section{
-    height: 60vmin;
+  #nav,
+  #main-section {
+    padding: 0 3vmax;
   }
 }
 
 @media (max-width: 800px) {
-  #first-section{
+  #first-section {
     height: 65vmax;
   }
-  #left-div-s1{
+  #nav a {
+    font-size: 2vmax;
+  }
+  #left-div-s1 {
     width: fit-content;
     height: fit-content;
   }
-  #profile-name{
+  #profile-name {
     font-size: 2.2vmax;
     width: 100%;
   }
-  #name{
+  #name {
     font-size: 4.5vmax;
     width: 100%;
   }
-  #ld-detailed-section{
+  #ld-detailed-section {
     font-size: 2.5vmax;
     width: 100%;
   }
-  #button{
+  #button {
     width: 17vmax;
     font-size: 2vmax;
-    padding: 3vw 0;
+    padding: 1.5vmax 0;
   }
-}
-
-@media (max-width: 700px) {
-  
+  /* #right-div-s1 {
+    display: none;
+  } */
+  #nav,
+  #main-section {
+    padding: 0 3vmax;
+  }
 }

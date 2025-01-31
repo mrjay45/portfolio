@@ -3,7 +3,6 @@ gsap.from("#logo", {
   x: -30,
   opacity: 0,
   duration: 2,
-  delay: 1,
 });
 
 gsap.fromTo(
@@ -15,7 +14,7 @@ gsap.fromTo(
     opacity: 1,
     duration: 2,
     delay: 1,
-    stagger: 0.5,
+    stagger: 0.3,
   }
 );
 
@@ -25,21 +24,20 @@ tl.from("#profile-name", {
   y: -20,
   x: 20,
   opacity: 0,
-  duration: 1,
-  delay: 1,
+  duration: 0.4,
+  delay: 2,
 });
 
 tl.from("#name", {
-  x: -100,
-  scale: 0,
+  y: 15,
   opacity: 0,
-  duration: 1,
+  duration: 0.5,
 });
 
 tl.from("#ld-detailed-section", {
   x: -20,
   opacity: 0,
-  duration: 1,
+  duration: 0.5,
 });
 
 tl.from("#button", {
@@ -62,29 +60,26 @@ gsap.from("#right-div-s1 img:nth-child(2)", {
   delay: 3,
 });
 
+/*Second Section animation */
 const t2 = gsap.timeline({
   scrollTrigger: {
     // markers: true,
     trigger: "#name2",
     scroller: "body",
-    start: "top 40%",
+    start: "top 60%",
   },
 })
 
 t2.from("#profile-img",{
   y: -100,
-  duration: 0.5,
-  stagger:0.3,
+  duration: 0.2,
   opacity: 0,
-  ease: "bounce.out",
 })
 
 t2.from("#profile-img img",{
-  x: -100,
-  rotation:360,
+  x: 0,
   opacity: 0,
-  duration: 1.5,
-  ease: "elastic.out(1.5,0.4)",
+  duration: 0.5,
 })
 
 t2.from("#name2", {
@@ -103,33 +98,23 @@ t2.from("#links img",{
   y: -100,
   opacity: 0,
   stagger:0.3,
-  duration:0.3,
   ease: "bounce.out",
 })
 
 t2.from("#heading p", {
-  y: 40,
+  y: 20,
   opacity: 0,
-  duration: 0.2,
 });
 
 t2.from("#heading img",{
   rotate:360,
   opacity:0,
-  duration:1,
+  duration:0.8,
 })
 
 t2.from("#about > p", {
   y: -100,
   opacity: 0,
-  duration: 0.5,
   stagger:0.3,
-  ease: "bounce.out",
 });
 
-t2.from("#para1 img",{
-  rotate:-30,
-  duration:1,
-  repeat: -1,
-  yoyo: true,
-})
