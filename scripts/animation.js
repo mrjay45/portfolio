@@ -61,60 +61,124 @@ gsap.from("#right-div-s1 img:nth-child(2)", {
 });
 
 /*Second Section animation */
-const t2 = gsap.timeline({
-  scrollTrigger: {
-    // markers: true,
-    trigger: "#name2",
-    scroller: "body",
-    start: "top 60%",
-  },
-})
+// const t2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#name2",
+//     scroller: "body",
+//     start: "top 60%",
+//     scrub: 2,
+//   },
+// })
 
-t2.from("#profile-img",{
+gsap.from("#profile-img",{
   y: -100,
   duration: 0.2,
   opacity: 0,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 })
 
-t2.from("#profile-img img",{
+gsap.from("#profile-img img",{
   x: 0,
   opacity: 0,
   duration: 0.5,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 })
 
-t2.from("#name2", {
+gsap.from("#name2", {
   x: 70,
   opacity: 0,
   duration: 0.3,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 });
 
-t2.from("#profile-name2", {
+gsap.from("#profile-name2", {
   x: -40,
   opacity: 0,
   duration: 0.3,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 });
 
-t2.from("#links img",{
+gsap.from("#links img",{
   y: -100,
   opacity: 0,
   stagger:0.3,
   ease: "bounce.out",
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 })
 
-t2.from("#heading p", {
+gsap.from("#heading p", {
   y: 20,
   opacity: 0,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 });
 
-t2.from("#heading img",{
+gsap.from("#heading img",{
   rotate:360,
   opacity:0,
   duration:0.8,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 })
 
-t2.from("#about > p", {
+gsap.from("#about > p", {
   y: -100,
   opacity: 0,
   stagger:0.3,
+  scrollTrigger: {
+    trigger: "#para1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    // markers:true,
+    scrub: 1.5,
+  },
 });
 

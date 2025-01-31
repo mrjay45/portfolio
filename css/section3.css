@@ -12,7 +12,7 @@
 }
 
 #third-section {
-  height: 50%;
+  height: 30vmax;
   width: 100vw;
   background-color: var(--section-bg);
   display: flex;
@@ -24,39 +24,43 @@
   position: relative;
   overflow: hidden;
 }
+
 #section3-heading {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
 }
+
 #section3-heading p {
-  font-size: 64px;
+  font-size: 4vmax;
   font-weight: 700;
 }
+
 #section3-des {
-  font-size: 18px;
-  word-spacing: 1.5px;
+  font-size: 1.3vmax;
+  word-spacing: 0.5vmin;
   color: #bec0c4;
 }
+
 #section3-skills {
-  height: 75%;
-  width: 60%;
+  height: 12vmax;
+  width: 40vmax;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2%;
+  flex-wrap: wrap;
 }
 
 .skill {
-  height: inherit;
-  width: fit-content;
+  height: 12.5vmax;
+  width: 9vmax;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5vmax;
   padding: 0.5%;
 }
 
 .skill img {
-  height: 70%;
+  height: 7.5vmax;
 }
