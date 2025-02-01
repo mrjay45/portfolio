@@ -7,7 +7,7 @@ gsap.from("#section3-heading p", {
     scroller: "body",
     start: "top 60%",
     end: "top 40%",
-    markers: true,
+    // markers: true,
     scrub: 2,
   },
 });
