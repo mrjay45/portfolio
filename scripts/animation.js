@@ -121,7 +121,6 @@ gsap.from("#profile-name2", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    // markers:true,
     scrub: 1.5,
   },
 });
