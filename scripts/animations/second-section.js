@@ -18,7 +18,7 @@ gsap.from("#profile-img", {
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -32,7 +32,7 @@ gsap.from("#profile-img img", {
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -46,7 +46,7 @@ gsap.from("#name2", {
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -59,7 +59,7 @@ gsap.from("#profile-name2", {
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -74,7 +74,7 @@ gsap.from("#links img", {
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -87,7 +87,7 @@ gsap.from("#heading p", {
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -95,13 +95,14 @@ gsap.from("#heading img", {
   rotate: 360,
   opacity: 0,
   duration: 0.8,
+  ease: "elastic.out(1, 0.3)",
   scrollTrigger: {
     trigger: "#para1",
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });
 
@@ -115,6 +116,6 @@ gsap.from("#about > p", {
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 1.5,
+    // scrub: 1.5,
   },
 });

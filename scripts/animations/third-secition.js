@@ -8,7 +8,7 @@ gsap.from("#section3-heading p", {
     start: "top 60%",
     end: "top 40%",
     // markers: true,
-    scrub: 2,
+    // scrub: 2,
   },
 });
 
@@ -16,13 +16,14 @@ gsap.from("#section3-heading img", {
   rotate: 360,
   opacity: 0,
   duration: 0.8,
+  ease: "elastic.out(1, 0.3)",
   scrollTrigger: {
     trigger: "#section3-des",
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
     // markers:true,
-    scrub: 2,
+    // scrub: 2,
   },
 });
 
@@ -35,7 +36,7 @@ gsap.from("#section3-des", {
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
-    scrub: 2,
+    // scrub: 2,
   },
 });
 
@@ -49,6 +50,6 @@ gsap.from("#section3-skills .skill", {
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
-    scrub: 2,
+    // scrub: 2,
   },
 });

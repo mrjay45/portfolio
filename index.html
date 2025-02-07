@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +32,7 @@
           <a href="#first-section" class="active">Home</a>
           <a href="#second-section">About</a>
           <a href="#third-section">Skills</a>
-          <a href="#">Projects</a>
+          <a href="#fourth-section">Projects</a>
           <a href="#">Contact</a>
         </div>
         <i class="ri-menu-2-line"></i>
@@ -119,8 +123,79 @@
       <div id="mid-circle7"></div>
     </section>
 
-    <section id="fouth-section"></section>
+    <section id="fourth-section">
+      <div id="right-div">
+        <div id="s4-heading">
+          <p>Project</p>
+          <img src="assets/Icons/Sparkle.png" alt="" />
+        </div>
+        <p id="s4-para3">
+          These are some of the projects I developed during the course.
+        </p>
 
+        <p id="s4-para4">
+          The course was focused on learning HTML, CSS and JavaScript
+          technologies, during the course I was able to develop different types
+          of projects also dealing with the semantic part of HTML and the
+          importance of accessibility on web pages.
+        </p>
+      </div>
+      <div id="left-div">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- first slide -->
+            <div class="swiper-slide">
+              <div class="project-heading">Go Store</div>
+              <div class="project-des">
+                E-commerce specialized in the sale of computer games and
+                equipment
+              </div>
+              <div class="tech-stack">
+                <div class="tech-name">HTML</div>
+                <div class="tech-name">Css</div>
+                <div class="tech-name">JavaScript</div>
+              </div>
+              <div class="button">View Project</div>
+            </div>
+            <!-- second slide -->
+            <div class="swiper-slide">
+              <div class="project-heading">My Phone</div>
+              <div class="project-des">
+                Website focused on the maintenance and sale of parts for cell
+                phones and tablets
+              </div>
+              <div class="tech-stack">
+                <div class="tech-name">HTML</div>
+                <div class="tech-name">Css</div>
+                <div class="tech-name">JavaScript</div>
+              </div>
+              <div class="button">View Project</div>
+            </div>
+            <!-- third slide -->
+            <div class="swiper-slide">
+              <div class="project-heading">Go Store</div>
+              <div class="project-des">
+                E-commerce specialized in the sale of computer games and
+                equipment
+              </div>
+              <div class="tech-stack">
+                <div class="tech-name">HTML</div>
+                <div class="tech-name">Css</div>
+                <div class="tech-name">JavaScript</div>
+              </div>
+              <div class="button">View Project</div>
+            </div>
+            <!-- fourth slide -->
+            <div class="swiper-slide">slide 3</div>
+            <!-- fifth slide -->
+            <div class="swiper-slide">slide 3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -133,10 +208,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="scripts/swiper.js"></script>
     <script src="scripts/animations/first-section.js"></script>
     <script src="scripts/animations/second-section.js"></script>
     <script src="scripts/animations/third-secition.js"></script>
-    <script src="scripts/circle-animation.js"></script>
+    <script src="scripts/animations/fourth-section.js"></script>
+    <!-- <script src="scripts/circle-animation.js"></script> -->
     <script src="scripts/script.js"></script>
   </body>
 </html>

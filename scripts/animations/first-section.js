@@ -59,3 +59,47 @@ gsap.from("#right-div-s1 img:nth-child(2)", {
   duration: 2,
   delay: 3,
 });
+
+// changes made by copilot
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from("#nav", {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.from("#main-section", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    delay: 0.5,
+  });
+
+  gsap.from("#left-div-s1", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.from("#right-div-s1 img", {
+    opacity: 0,
+    x: 50,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+  });
+
+  gsap.from("#top-circle1, #top-circle2, #top-circle3, #top-circle4, #top-circle5", {
+    opacity: 0,
+    scale: 0.5,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.2,
+  });
+});

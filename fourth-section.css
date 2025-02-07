@@ -1,0 +1,96 @@
+.project-heading {
+  font-size: 1.7vmax;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.5vmax;
+}
+
+.project-des {
+  font-size: 1vmax;
+  word-spacing: 0.5vmin;
+  color: #bec0c4;
+  line-height: 1.3;
+  margin-bottom: 0.8vmax;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.8vmax;
+  margin-bottom: 1vmax;
+}
+
+.tech-name {
+  font-size: 0.9vmax;
+  color: #2ed573;
+  padding: 0.2vmax 0.7vmax;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #2ed573;
+  border-radius: 4px;
+}
+
+.button {
+  width: 100%;
+  padding: 0.6vmax;
+  background-color: var(--dark-pc);
+  text-align: center;
+  font-size: 1vmax;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .project-heading {
+    font-size: 2.2vmax;
+    margin-bottom: 1vmax;
+  }
+
+  .project-des {
+    font-size: 1.6vmax;
+    line-height: 1.3;
+    margin-bottom: 1.2vmax;
+  }
+
+  .tech-stack {
+    gap: 1vmax;
+    margin-bottom: 1.5vmax;
+    flex-wrap: wrap;
+  }
+
+  .tech-name {
+    font-size: 1.4vmax;
+    padding: 0.3vmax 0.8vmax;
+  }
+
+  .button {
+    padding: 1vmax;
+    font-size: 1.5vmax;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-heading {
+    font-size: 2.8vmax;
+    margin-bottom: 1.2vmax;
+  }
+
+  .project-des {
+    font-size: 1.8vmax;
+    line-height: 1.4;
+    margin-bottom: 1.5vmax;
+  }
+
+  .tech-stack {
+    gap: 1.2vmax;
+    margin-bottom: 2vmax;
+  }
+
+  .tech-name {
+    font-size: 1.6vmax;
+    padding: 0.4vmax 1vmax;
+  }
+
+  .button {
+    padding: 1.2vmax;
+    font-size: 1.8vmax;
+  }
+}
